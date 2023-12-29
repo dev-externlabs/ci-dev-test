@@ -31,7 +31,7 @@ jobs:
     - run: npm run test --if-present
 
     - name: Public docker Image
-    - uses: mr-smithers-excellent/docker-build-push@v6
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: devendraexternlabs/docker-dev-test
         tags: v1, latest
